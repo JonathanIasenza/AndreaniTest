@@ -1,0 +1,186 @@
+* {
+	margin: 0;
+	padding:  0;
+	font-family: 'Roboto';
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background-image:url(../images/001.jpg);
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+  .title-app{
+	text-align: center;
+	margin-top:35px;
+	margin-bottom: -55px;
+	font-family: "Architects Daughter";
+    text-align: center;
+    font-size: 10vh;
+    word-spacing: 5px;
+    color: rgb(224, 224, 224);
+    text-shadow: rgb(15, 15, 15) 7px 8px 8px;
+}
+
+.flexbox {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	max-width: 1000px;
+	height: 100%;
+	margin: 0 auto;
+	padding: 100px;
+}
+
+.flexbox .boardwrapper {
+	display:  flex;
+	flex-direction: column;
+	width: 100%;
+	margin-top: 20px;
+	max-width: 250px;
+	min-width: 100px;
+	background-color: rgb(73, 31, 151);
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0,0,0,0.22);
+	border-radius: 2%;
+	padding: 15px;
+}
+
+.flexbox .board {
+	display:  flex;
+	flex-direction: column;
+	width: 100%;
+	background-color: #E8E8E8;
+	padding: 17px;
+	min-height: 500px;
+	box-shadow: 0 14px 28px rgba(34, 0, 0, 0.25), 0 10px 10px rgba(0,0,0,0.22);
+	max-height: 500px;
+	overflow: auto;
+	border-radius: 3%;
+	transition: background-color .5s;
+}
+
+.board:hover{
+	background-color: rgb(199, 199, 199);
+}
+
+.flexbox .board .card {
+	padding: 15px 25px;
+	background-color:  #F3F3F3;
+	cursor: grab;
+	margin-bottom: 15px;
+	text-align: center;
+	min-height: 100px;
+	width: 100%;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.144), 0 10px 10px rgba(0, 0, 0, 0.144);
+	transition: all .5s;
+}
+
+.flexbox .board .card:hover{
+	background-color: rgb(70, 11, 165);
+	color:#fff;
+	border-radius: 10%;
+}
+
+.logo{
+	text-align: center;
+	margin-top: -100px;
+}
+
+.boardheader {
+	background-color: #E8E8E8;
+	box-shadow: 0 5px 12px rgba(0, 0, 0, 0.144), 0 10px 12px rgba(0, 0, 0, 0.144);
+	padding: 5%;
+	margin-bottom: 10px;
+	border-radius: 5%;
+}
+
+.boardheader__body {
+	display: flex;
+	justify-content: space-between;
+	transition: all .4s;
+}
+
+
+.MuiSvgIcon-root {
+	cursor: pointer;
+}
+
+.add-icon{
+	transition: all .8s;
+	border-radius: 50%;
+	width: 24px;
+	height: 26px;
+}
+
+.add-icon:hover{
+	background-color: rgb(197, 197, 197);
+}
+
+
+button {
+	background-color: rgb(206, 206, 206);
+	color: rgb(44, 44, 44);
+	padding: 5px;
+	cursor: pointer;
+	outline: none;
+	font-weight: 600;
+}
+
+button:hover{
+	background-color: rgb(190, 190, 190);
+}
+
+.titlebody {
+	display: flex;
+    align-items: flex-start;
+	padding-left: 20px;
+	padding-top: 10px;
+}
+
+.circle {
+	width: 15px;
+    height: 15px;
+	border-radius: 50px;
+	margin-right: 5px;
+	margin-top: 3px;
+}
+ 
+
+/* Responsive Design */
+
+@media (max-width:768px){
+
+	.title-app{
+		font-size: 7vh;
+	}
+
+	.flexbox {
+		display: block;
+		justify-content: center;
+		width: 400px;
+		max-width: 1000px;
+		height: 100%;
+		margin: 0 auto;
+		padding: 100px;
+	}
+
+	.flexbox .boardwrapper {
+		display:  flex;
+		flex-direction: column;
+		width: 100%;
+		margin-top: 20px;
+		max-width: 250px;
+		min-width: 220px;
+		background-color: rgb(73, 31, 151);
+		box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0,0,0,0.22);
+		border-radius: 2%;
+		padding: 15px;
+	}
+
+	.logo img{
+		max-width: 200px;
+	}
+}
